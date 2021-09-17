@@ -32,8 +32,8 @@ public class Enrollment {
     private boolean available;
     private boolean onlyUpdate;
 
-//    @ManyToMany(mappedBy = "enrollmentsDone")
-//    private Set<Lesson> lessonsDone = new HashSet<>();
+    @ManyToMany(mappedBy = "enrollmentsDone")
+    private Set<Lesson> lessonsDone = new HashSet<>();
 //
 //    @OneToMany(mappedBy = "enrollment")
 //    private List<Deliver> deliveries = new ArrayList<>();
