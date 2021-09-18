@@ -26,7 +26,5 @@ public class OAuthCustomError implements Serializable {
 
     public String getErrorDescription() { return errorDescription; }
 
-    public void setErrorDescription(String errorDescription) {
-        this.errorDescription = errorDescription;
-    }
+    public void setErrorDescription(String errorDescription) { this.errorDescription = errorDescription; }
 }
