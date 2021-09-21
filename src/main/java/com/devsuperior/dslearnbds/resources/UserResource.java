@@ -15,11 +15,11 @@ import com.devsuperior.dslearnbds.services.UserService;
 public class UserResource {
 
     @Autowired
-    private UserService service;
+    private UserService userService;
 
     @GetMapping(value = "/{id}")
     public ResponseEntity<UserDTO> findById(@PathVariable Long id) {
-        UserDTO dto = service.findById(id);
+        UserDTO dto = userService.findById(id);
         return ResponseEntity.ok().body(dto);
     }
 }
